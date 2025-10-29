@@ -91,5 +91,11 @@
 				      IRQ_DEFAULT_PRIORITY>;
 			status = "disabled";
 		};
+
+		dma0: dma@7e007000 {
+			compatible = "brcm,bcm2835-dma";
+			reg = <0x7e007000 0xb00>;
+			#dma-cells = <1>;
+		};
 	};
 };

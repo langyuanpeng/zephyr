@@ -1,0 +1,13 @@
+# Copyright 2023 Ryan
+# SPDX-License-Identifier: Apache-2.0
+
+description: Raspiberry DMA Controller
+
+include: dma-controller.yaml
+
+compatible: brcm,bcm2835-dma
+
+properties:
+  "#dma-cells":
+    type: int
+    description: The single cell represents the DREQ number.
